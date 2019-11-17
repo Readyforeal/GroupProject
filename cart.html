@@ -46,7 +46,7 @@
             
         </section>
 
-        <section id="content-section">
+        <section id="cart-section">
             <div class="container">
 
                 <div class="row pt-5">
@@ -57,9 +57,29 @@
                             </div>
 
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Empty item slot</li>
-                                <li class="list-group-item">Empty item slot</li>
-                                <li class="list-group-item">Empty item slot</li>
+
+                                <!-- Change d-none to d-flex on add. This will show the cart item -->
+
+                                <li class="list-group-item d-none" id="cart-item-1">
+                                    <img src="https://www.intel.com/content/dam/products/hero/foreground/core-i7-unlocked-box-1x1.png.rendition.intel.web.550.550.png" height="55" class="pr-3">
+                                    <p class="pt-3">Intel Core I7 (9th Gen)</p>
+                                    <p class="ml-auto pt-3 pr-3">$279.99</p>
+                                    <button class="btn btn-outline-danger">Remove</button>
+                                </li>
+
+                                <li class="list-group-item d-none" id="cart-item-2">
+                                    <img src="https://www.intel.com/content/dam/products/hero/foreground/core-i5-unlocked-box-1x1.png.rendition.intel.web.550.550.png" height="55" class="pr-3">
+                                    <p class="pt-3">Intel Core I5 (9th Gen)</p>
+                                    <p class="ml-auto pt-3 pr-3">$249.99</p>
+                                    <button class="btn btn-outline-danger">Remove</button>
+                                </li>
+
+                                <li class="list-group-item d-none" id="cart-item-3">
+                                    <img src="https://www.intel.com/content/dam/products/hero/foreground/processor-box-8th-gen-core-i3-1x1.png.rendition.intel.web.550.550.png" height="55" class="pr-3">
+                                    <p class="pt-3">Intel Core I3 (9th Gen)</p>
+                                    <p class="ml-auto pt-3 pr-3">$119.99</p>
+                                    <button class="btn btn-outline-danger">Remove</button>
+                                </li>
                             </ul>
 
                             <div class="card-body">
@@ -74,8 +94,8 @@
                                 Checkout
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Total:</h5>
                                 <p class="card-text">Tax:</p>
+                                <h5 class="card-title">Total:</h5>
                                 <a href="#" class="btn btn-outline-primary">Buy now</a>
                             </div>
                         </div>
@@ -85,7 +105,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="pt-5" id="footer">
+        <footer class="pt-5 bottom-0 absolute" id="footer" style="position:absolute; bottom: 0; width: 100%;">
             <div class="footer-copyright text-center py-3 bg-light" id="footer-copyright">
                 <p>2019 Copyright: Ultimate Hardware</p>
             </div>
