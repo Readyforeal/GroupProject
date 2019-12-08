@@ -10,6 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
+        <script src="cart.js"></script>
     </head>
 
     <body>
@@ -64,25 +65,25 @@
                                     <img src="https://www.intel.com/content/dam/products/hero/foreground/core-i7-unlocked-box-1x1.png.rendition.intel.web.550.550.png" height="55" class="pr-3">
                                     <p class="pt-3">Intel Core I7 (9th Gen)</p>
                                     <p class="ml-auto pt-3 pr-3">$279.99</p>
-                                    <button class="btn btn-outline-danger">Remove</button>
+                                    <button class="btn btn-outline-danger" id="remove-item-1">Remove</button>
                                 </li>
 
                                 <li class="list-group-item d-none" id="cart-item-2">
                                     <img src="https://www.intel.com/content/dam/products/hero/foreground/core-i5-unlocked-box-1x1.png.rendition.intel.web.550.550.png" height="55" class="pr-3">
                                     <p class="pt-3">Intel Core I5 (9th Gen)</p>
                                     <p class="ml-auto pt-3 pr-3">$249.99</p>
-                                    <button class="btn btn-outline-danger">Remove</button>
+                                    <button class="btn btn-outline-danger" id="remove-item-2">Remove</button>
                                 </li>
 
                                 <li class="list-group-item d-none" id="cart-item-3">
                                     <img src="https://www.intel.com/content/dam/products/hero/foreground/processor-box-8th-gen-core-i3-1x1.png.rendition.intel.web.550.550.png" height="55" class="pr-3">
                                     <p class="pt-3">Intel Core I3 (9th Gen)</p>
                                     <p class="ml-auto pt-3 pr-3">$119.99</p>
-                                    <button class="btn btn-outline-danger">Remove</button>
+                                    <button class="btn btn-outline-danger" id="remove-item-3">Remove</button>
                                 </li>
                             </ul>
 
-                            <div class="card-body">
+                            <div class="card-body" id="cart-total">
                                 Total:
                             </div>
                         </div>
@@ -94,9 +95,9 @@
                                 Checkout
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Tax:</p>
-                                <h5 class="card-title">Total:</h5>
-                                <a href="#" class="btn btn-outline-primary">Buy now</a>
+                                <p class="card-text" id="cart-tax">Tax:</p>
+                                <h5 class="card-title" id="cart-final-total">Total:</h5>
+                                <a href="#" class="btn btn-outline-primary" id="buy-button">Buy now</a>
                             </div>
                         </div>
                     </div>
